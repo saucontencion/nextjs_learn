@@ -2,5 +2,10 @@
   "extends": [
     "next/core-web-vitals",
     "next/typescript"
-  ]
+  ],
+  "rules": {
+    "no-console": "off", // Desactiva la regla no-console
+    "react/react-in-jsx-scope": "off" // Desactiva la regla que requiere React en el ámbito
+  }
+  
 }
