@@ -1,4 +1,5 @@
 
+app/layout.tsx
 app/ui/customers/table.tsx
 app/ui/dashboard/latest-invoices.tsx
 app/ui/dashboard/revenue-chart.tsx

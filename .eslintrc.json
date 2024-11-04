@@ -17,14 +17,12 @@
     "sourceType": "module"
   },
   "rules": {
-    "no-console": "off", // Desactivar la regla no-console
-    "react/react-in-jsx-scope": "off", // Desactivar la regla de React
+    "no-console": "off", 
+    "react/react-in-jsx-scope": "off", 
     "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
 
   },
   "settings": {
     "react": {
-      "version": "detect" // Esto detectará automáticamente la versión de React que estás usando
-    }
-  }
-}
+      "version": "detect"
+}}}
