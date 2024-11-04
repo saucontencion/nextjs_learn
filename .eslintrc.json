@@ -1,11 +1,30 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
   "extends": [
-    "next/core-web-vitals",
-    "next/typescript"
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
   "rules": {
-    "no-console": "off", // Desactiva la regla no-console
-    "react/react-in-jsx-scope": "off" // Desactiva la regla que requiere React en el ámbito
+    "no-console": "off", // Desactivar la regla no-console
+    "react/react-in-jsx-scope": "off", // Desactivar la regla de React
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
+
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Esto detectará automáticamente la versión de React que estás usando
+    }
   }
-  
 }

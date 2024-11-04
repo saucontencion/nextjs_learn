@@ -1,0 +1,7 @@
+
+app/ui/customers/table.tsx
+app/ui/dashboard/latest-invoices.tsx
+app/ui/dashboard/revenue-chart.tsx
+app/ui/invoices/buttons.tsx
+app/ui/invoices/pagination.tsx
+app/ui/login-form.tsx
