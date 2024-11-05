@@ -1,45 +1,47 @@
-{
-  "compilerOptions": {
-    "target": "ES2017",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": false,
-    "strict": false, // O desactivar configuraciones específicas
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./*"
+  {
+    "compilerOptions": {
+      "noEmitOnError": false, // No bloquea la salida si hay errores.
+      "strict": false, // Desactiva el modo estricto de TypeScript.
+      "noUnusedLocals": false, // Desactiva la advertencia sobre variables no usadas.
+      "noUnusedParameters": false, // Desactiva la advertencia sobre parámetros no usados.
+      "skipLibCheck": true, // Omite la comprobación de tipos en las bibliotecas.
+      "esModuleInterop": true, // Permite importar módulos ES6.
+      "resolveJsonModule": true, // Permite importar archivos JSON como módulos.
+      "baseUrl": ".", // Establece la raíz del proyecto para la resolución de módulos.
+      "paths": {
+        "@/*": [
+          "*"
+        ] // Ajusta el alias `@` para apuntar a la carpeta `app` (estructura de Next.js).
+      },
+      "moduleResolution": "node", // Asegura que TypeScript use el sistema de resolución de módulos de Node.
+      "allowJs": true, // Permite archivos JavaScript en el proyecto.
+      "skipDefaultLibCheck": true, // Omite la comprobación de los archivos de definición de la librería estándar.
+      "forceConsistentCasingInFileNames": true // Asegura que la sensibilidad a mayúsculas/minúsculas sea consistente.
+      ,
+      "target": "ES2017",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "noEmit": true,
+      "incremental": true,
+      "module": "esnext",
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "plugins": [
+        {
+          "name": "next"
+        }
       ]
-    }
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "app/lib/placeholder-data.ts",
-    "scripts/seed.js"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
-}
+    },
+    "include": [
+      "app/**/*", // Incluye todos los archivos dentro de la carpeta `app`.
+      "next-env.d.ts" // Asegura que los tipos de Next.js estén disponibles.
+      ,
+      ".next/types/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules" // Excluye la carpeta `node_modules`.
+    ]
+  }

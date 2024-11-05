@@ -1,0 +1,15 @@
+instalar code gpt es de un chileno
+{
+  "compilerOptions": {
+    "noEmitOnError": false,  // No bloquea la salida si hay errores.
+    "strict": false,         // Desactiva el modo estricto de TypeScript.
+    "noUnusedLocals": false, // Desactiva la advertencia sobre variables no usadas.
+    "noUnusedParameters": false, // Desactiva la advertencia sobre parámetros no usados.
+    "skipLibCheck": true,    // Omite la comprobación de tipos en las bibliotecas.
+    "esModuleInterop": true, // Permite importar módulos ES6.
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
